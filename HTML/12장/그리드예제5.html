@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+  <style>
+    #wrapper {
+      display: grid;
+      width: 700px;
+      grid-template-columns: repeat(3, 1fr);   /*한 칸은 약 233px 3칸 동일하게 설정*/
+      grid-template-rows: repeat(3, 100px);    /*한 칸은 100px 설정*/
+    }
+    .box1{
+      background-color: blue;
+      grid-column: 1/4;
+    }.box2{
+      background-color: green;
+      grid-row: 2/4;
+    }
+    .box3{
+      background-color: orange;
+      grid-column: 2/4;
+      grid-row: 2/4;
+    }
+    .box4{
+      background-color: yellow;
+      grid-column: 3;
+      grid-row-start: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="box box1">box1</div>
+    <div class="box box2">box1</div>
+    <div class="box box3">box1</div>
+    <div class="box box4">box1</div>
+  </div>
+
+</body>
+
+</html>

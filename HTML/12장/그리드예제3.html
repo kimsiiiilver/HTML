@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <style>
+    #wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      margin-bottom: 20px;
+    }
+    .items{
+      border: 1px solid black;
+    }
+    .items:nth-child(2n+1){
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="items">가나다라마바사아자차카타파하</div>
+    <div class="items">가나다라마바사아자차카타파하가나다라마바사아자차카타파하</div>
+    <div class="items">가나다라마바사아자차카타파하</div>
+    <div class="items">가나다라마바사아자차카타파하</div>
+    <div class="items">가나다라마바사</div>
+  </div>
+  
+</body>
+</html>

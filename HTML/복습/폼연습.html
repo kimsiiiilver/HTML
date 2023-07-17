@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+  <title>폼연습</title>
+  <style>
+    table, td, tr{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    table{
+      width: 600px;
+      margin: 0 auto;
+    }
+    button{
+      margin: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <h1> 텍스트 입력 창</h1>
+    <table>
+      <tr>
+        <td><label for="name">이름:</label></td>
+        <td><input id="name" name="name" type="text" required></td>
+      </tr>
+      <tr>
+        <td><label for="pw1">비밀번호:</label></td>
+        <td><input id="pw1" name="pw1" type="password" required autofocus>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="email">이메일:</label></td>
+        <td><input id="email" name="email" type="email">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="c">이메일 수신:</label>
+        </td>
+        <td> <input id="c" name="c" type="radio">예
+          <input id="c" name="c" type="radio">아니오
+        </td>
+      </tr>
+      <tr>
+        <td><label for="box">TV에서 즐겨보는 분야는?</label></td>
+        <td><input id="box" name="box" type="checkbox">뉴스
+        <input id="box" name="box" type="checkbox">드라마
+        <input id="box" name="box" type="checkbox">스포츠
+        <input id="box" name="box" type="checkbox">엔터테이먼트
+        <input id="box" name="box" type="checkbox">기타
+        </td>
+      </tr>
+      <td colspan="2">
+        <button type="submit">제출</button>
+      </td>
+    </table>
+  </form>
+</body>
+
+</html>
